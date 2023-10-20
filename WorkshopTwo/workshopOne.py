@@ -1,3 +1,5 @@
+# Exercise 1
+
 sumOf = 0
 while True:
     number = input("Enter a number 4 times or type 'Q': ")
