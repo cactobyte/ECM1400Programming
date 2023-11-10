@@ -1,0 +1,14 @@
+As discussed in the lessons, write a program containing a function called word_frequency that counts and how often each unique word in a file occurs. Your program should use a dictionary, deal with text files that have more than one word per line (use split), and read and process one line at a time, rather than reading the entire file in one go.
+
+You should also remove punctuation from each line. This can most easily be done using a list of the punctuation characters and the replace(s, t) method on string, which replaces occurrences of s with t. Thus:
+
+
+>>> punctuation = ’!"#$%&´()*+,-./:;<=>?@[\]^_‘|~’
+>>> line = ’this is a $%^& string with too much <=^ punctuation!’
+>>> for s in string.punctuation:
+... line = line.replace(s, ’ ’)
+...
+>>> line
+’this is a string with too much punctuation’
+
+There are more efficient ways of removing the punctuation, but this is straightforward and clear. Test the function on ex1.txt. 
